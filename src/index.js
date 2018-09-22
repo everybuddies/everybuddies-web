@@ -10,8 +10,6 @@ class ObservableTodoStore {
     @observable todos = [];
     @observable pendingRequests = 0;
 
-
-
     @computed get completedTodosCount() {
         return this.todos.filter(
             todo => todo.completed === true
